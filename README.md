@@ -102,14 +102,14 @@ Just remove it from linked libraries and frameworks
 #### Using yarn (RN 0.60 and and above)
 
 ```
-    yarn add react-native-orientation-locker
+    yarn add https://github.com/Artear/react-native-orientation-locker.git
 ```
 
 
 #### Using yarn (RN 0.59 and and below)
 
 ```
-    yarn add react-native-orientation-locker
+    yarn add https://github.com/Artear/react-native-orientation-locker.git
     react-native link react-native-orientation-locker
 ```
 #### Manual linking
