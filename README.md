@@ -13,6 +13,15 @@ A react-native module that can listen on orientation changing of device, get cur
 <details>
   <summary>ChangeLog details</summary>
 
+
+v1.3.1 
+1. Fix require cycle problem
+
+v1.3.0 **BREAKING CHANGES**
+1. Add support for Window
+2. Modify sample project
+3. Updates Tyescript define
+
 v1.2.0 **BREAKING CHANGES**
 1. Add support for lockAllOrientationsButUpsideDown
 2. Ignore on web and desktop (#115)
@@ -87,7 +96,7 @@ Just remove it from linked libraries and frameworks
 
 5. For Windows, getting information on device orientation and tracking its changes will only be possible on devices with an orientation sensor. If the device running your application does not have the appropriate hardware to support tracking device orientation, `getDeviceOrientation()` will return UNKNOWN.
 
-#### To Run example on Windows Tablet (This will allow one to view modules full functionality)
+#### To run example on Windows Tablet (This will allow one to view modules full functionality)
 1. Open example/windows/example.sln in Visual Studio. 
 2. Go to Project > Publish > Create App Packages.
 3. Certificate password is "password".
@@ -113,7 +122,7 @@ Just remove it from linked libraries and frameworks
     react-native link react-native-orientation-locker
 ```
 #### Manual linking
-For Windows, you must follow the steps outlined [here](https://microsoft.github.io/react-native-windows/docs/native-modules-using) for linking module.
+For Windows, if you are using RNW v0.63.0 or higher, autolinking should link the module for you. Otherwise, you must follow the steps outlined [here](https://microsoft.github.io/react-native-windows/docs/native-modules-using) for linking module.
 
 Add following to MainApplication.java
 (This will be added automatically by auto link. If not, please manually add the following )
